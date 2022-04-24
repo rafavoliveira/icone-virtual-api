@@ -5,5 +5,5 @@ const routerUsuario = require("./routerUsuario");
 const routerProduto = require("./routerProduto");
 const routerFavorito = require("./routerFavorito");
 
-router.use(routerUsuario);
+router.use(routerUsuario, routerProduto);
 module.exports = router;

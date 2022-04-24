@@ -64,7 +64,7 @@ module.exports = {
         return res.status(400).json("Esse usuário não existe");
       }
 
-      const usuarioDeletado = await usuario.destroy({
+      await usuario.destroy({
         where: {
           idUsuario,
         },
